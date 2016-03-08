@@ -1,0 +1,171 @@
+/* Style for menu element*/
+a {
+  text-decoration:none;
+  color:#343434
+}
+a:visited {color:#4e4e4e}
+a:hover {color:#1b1b1b}
+a:focus { 
+  outline:thin dotted;
+  color:#343434
+}
+a:hover,a:active {outline:0}
+
+/* Style menu section */
+.navigation-wrapper {
+    margin:0 auto;
+    width:100%;
+    padding:2em 0 1em;
+    font-family:"PT Sans Narrow",sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    *zoom:1
+}
+.navigation-wrapper:before,.navigation-wrapper:after {
+  display:table;
+  content:"";
+  line-height:0
+}
+
+.navigation-wrapper:after {
+  clear:both
+}
+
+/* Style for menu into navigation-wrapper*/
+.top-navigation { 
+  display:inline;
+  float:left;
+  width:83.33333%;
+  margin-left:8.33333%;
+  margin-right:8.33333%;
+  margin-bottom:1em;  
+  float:none;
+  display:block
+}
+@media only screen and (min-width: 37.5em) {
+  .top-navigation {
+    display:inline;
+    float:left;
+    width:75%;
+    margin-left:5%;
+    margin-right:0%
+    }
+  }
+@media only screen and (min-width: 86.375em) {
+  .top-navigation {
+    display:inline;
+    float:left;
+    width:66.66667%
+    }
+  }
+.top-navigation ul {
+  margin:0;
+  padding:0;
+  clear:both;
+  list-style-type:none
+}
+.top-navigation li {
+  display:block;
+  list-style-type:none;
+  border-bottom:1px solid #ddd;
+  border-bottom:1px solid fade(#111, 10);
+  font-size:16px;
+  font-size:1rem
+}
+.top-navigation li:last-child {
+  border-bottom:0 solid transparent
+}
+@media only screen and (min-width: 37.5em) {
+      .top-navigation li { 
+        display:inline;
+        margin-right:25px;
+        white-space:nowrap;
+        border-bottom:0 solid transparent
+        }
+      }
+.top-navigation li a {
+  display:block;
+  padding:10px 0;
+  decoration:none;
+  border-bottom:0 solid transparent;
+  -webkit-transition:all 0.2s;
+  -moz-transition:all 0.2s;
+  -ms-transition:all 0.2s;
+  -o-transition:all 0.2s;
+  transition:all 0.2s
+}
+
+/* Space beetween menu element */
+@media only screen and (min-width: 37.5em) {
+  .top-navigation li a {
+    display:inline;
+    padding:20px
+  }
+}
+
+/* THIS LINE IS USEFUL FOR MENU NAVIGABLE*/
+/*
+.navicon-lines-button{padding:.375rem .75rem;transition:.3s;cursor:pointer;user-select:none;border-radius:.21429rem}
+.navicon-lines-button:hover{opacity:1}
+.navicon-lines-button:active{transition:0}
+.navicon-lines { 
+  margin-right:10px;margin-bottom:.3rem;display:inline-block;width:1.5rem;height:.21429rem;
+  background:#fff;border-radius:.10714rem;transition:.3s;position:relative
+}
+.navicon-lines:before,.navicon-lines:after {
+  display:inline-block;width:1.5rem;height:.21429rem;background:#fff;border-radius:.10714rem;
+  transition:.3s;position:absolute;left:0;content:'';-webkit-transform-origin:.10714rem center;
+  transform-origin:.10714rem center
+}
+.navicon-lines:before{top:.375rem}
+.navicon-lines:after{top:-.375rem}
+.navicon-lines-button:hover{opacity:1}
+.navicon-lines-button:hover .navicon-lines:before{top:.42857rem}
+.navicon-lines-button:hover .navicon-lines:after{top:-.42857rem}
+.navicon-lines-button.x.active .navicon-lines{background:transparent}
+.navicon-lines-button.x.active .navicon-lines:before,.navicon-lines-button.x.active .navicon-lines:after {
+  -webkit-transform-origin:50% 50%;transform-origin:50% 50%;top:0;width:1.5rem
+}
+.navicon-lines-button.x.active .navicon-lines:before { 
+  -webkit-transform:rotate3d(0, 0, 1, 45deg);transform:rotate3d(0, 0, 1, 45deg)}
+.navicon-lines-button.x.active .navicon-lines:after {
+  -webkit-transform:rotate3d(0, 0, 1, -45deg);transform:rotate3d(0, 0, 1, -45deg)}
+.nav .navtoggle {
+  font-size:18px;font-size:1.125rem;font-weight:normal;background-color:#111;color:#fff;
+  border:none;cursor:pointer
+}
+*/
+@media only screen and (min-width: 37.5em) {
+  .nav .navtoggle{display:none}
+}
+.nav button {
+  border:none;
+  background:none
+}
+.navtoggle i {z-index:-1}
+.icon-menu {
+  position:relative;
+  top:3px;
+  line-height:0
+}
+.no-js .nav .navtoggle{display:none}
+.no-js .nav ul {
+  max-height:30em;
+  overflow:hidden
+}
+.js .nav ul {
+  max-height:0;
+  overflow:hidden
+}
+@media only screen and (min-width: 37.5em) {
+  .js .nav ul{max-height:30em}
+}
+.js .nav .active+ul { 
+  max-height:30em;
+  overflow:hidden;
+  -webkit-transition:max-height .4s;
+  -moz-transition:max-height .4s;
+  -o-transition:max-height .4s;
+  -ms-transition:max-height .4s;
+  transition:max-height .4s
+}
