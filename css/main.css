@@ -1,6 +1,17 @@
 @import "menu-bar.css";
+@import "image.css";
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display:block}
+img {border:0}
+b,i,strong,em,blockquote,p,q,span,figure,img,h1,h2,header,input,a {
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease
+}
+.image-pull-right{float:right;margin-top:0}
+
 /*
 audio,canvas,video {display:inline-block}
 audio:not([controls]) {display:none;height:0}
@@ -366,5 +377,6 @@ body {
 	font-family:"PT Serif",serif;
 	color:#333332
 }
+
 
 
