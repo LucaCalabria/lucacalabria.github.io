@@ -1,4 +1,11 @@
-.info {
+.info { 
+   width: 92%;
+    max-width: 800px;
+    background: #f3f3f3;
+    /* margin: 30px auto; */
+    margin: 0;
+}
+.infoDetails {
     padding: 25px 35px;
 	border-bottom: 2px solid #cf8a05;
 	background: #ededed;
@@ -39,6 +46,7 @@
 .info a:hover {color:#0653E1}
 
 section .singleInfo {
+	width: 92%;
 	border-top: 2px solid #433B3B;
 	padding: 20px 0 0;
 }
@@ -51,3 +59,8 @@ section .singleInfo:last-child {
 	padding: 20px 0 10px;
 }
 
+section .toc {
+		display:inline;
+		float:left;
+		width:72%
+	}
